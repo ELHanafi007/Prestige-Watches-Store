@@ -1415,3 +1415,67 @@ section.our-collection h2 {
 }
 
 
+/* Form Section Styles */
+.form-section {
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f8f8f8, #e7e7e7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section label {
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+}
+
+.form-section input {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: 'Merriweather', serif;
+}
+
+.form-section input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.form-section button {
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  font-family: 'Merriweather', serif;
+  align-self: center;
+}
+
+.form-section button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: translateY(-2px);
+}

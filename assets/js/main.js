@@ -158,3 +158,20 @@ if (videoElement) {
     videoElement.style.height = '100%';
     videoElement.style.objectFit = 'cover';
 }
+document.getElementById('btn').addEventListener('click', function () {
+    document.getElementById('popupForm').style.display = 'flex';
+  });
+  
+  document.getElementById('closeBtn').addEventListener('click', function () {
+    document.getElementById('popupForm').style.display = 'none';
+  });
+  
+  document.getElementById('formSubmitBtn').addEventListener('click', function () {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const address = document.getElementById('address').value;
+    const message = `Nom et Prénom: ${name}\nNuméro de Téléphone: ${phone}\nAdresse: ${address}\nI am interested in the Rolex Datejust Oyster Perpetual Acier 41`;
+    const whatsappUrl = `https://wa.me/+212622314644?text=${encodeURIComponent(message)}`;
+    window.location.href = whatsappUrl;
+  });
+  
